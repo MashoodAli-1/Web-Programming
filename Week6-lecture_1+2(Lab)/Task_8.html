@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#animateDiv").animate({ left: "250px" }, 8000);
+      });
+    </script>
+    <style>
+      #animateDiv {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="animateDiv"></div>
+  </body>
+</html>

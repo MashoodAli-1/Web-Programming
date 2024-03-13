@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".clickable").click(function () {
+          var clickedClass = $(this).attr("class");
+          var clickedId = $(this).attr("id");
+          alert("Class: " + clickedClass + ", ID: " + clickedId);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="clickable" id="element1">Element 1</div>
+    <div class="clickable" id="element2">Element 2</div>
+  </body>
+</html>

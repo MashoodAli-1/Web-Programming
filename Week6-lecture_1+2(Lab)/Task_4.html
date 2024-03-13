@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".removeButton").click(function () {
+          $(this).closest("tr").remove();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Row 1 Data</td>
+        <td><button class="removeButton">Remove Row</button></td>
+      </tr>
+      <tr>
+        <td>Row 2 Data</td>
+        <td><button class="removeButton">Remove Row</button></td>
+      </tr>
+    </table>
+  </body>
+</html>
